@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RI Official Meeting Notes</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<nav class="menu">
+  <ul>
+    <li><a href="#Agenda">Agenda</a></li>
+    <li><a href="#Shift-Rotation">Shift Rotation</a></li>
+    <li><a href="#Expedition-Archive">Expedition Archive</a></li>
+    <li><a href="#Elite-Form">Elite Promotion Request Form</a></li>
+  </ul>
+</nav>
+
+<body>
+  <main>
+    <header>Meeting Notes: <em>CLASSIFIED INFORMATION, DO NOT SHOW TO W</em></header>
+    <h1>Elite Ops Roster Review and Board Meeting</h1>
+    <h2>1/18/1104</h2>
+    <h2>Operators in Attendance</h2>
+    <ol>
+      <li>Amiya</li>
+      <li>Blaze</li>
+      <li>Kal'tsit</li>
+      <li>Doctor</li>
+      <li>Warfarin</li>
+      <li>Ceobe</li>
+      <li>Gavial</li>
+      <li>Weedy</li>
+      <li>Dobermann</li>
+    </ol>
+    <h2 id="Agenda">Agenda Items</h2>
+    <h3>Roster Updates</h3>
+    <p>
+      Operators <b>Tin Man</b>, <b>Marcille</b>, <b>Aak</b>, and <b>Nymph</b> have been newly taken onboard. Operator
+      Kal'tsit is requesting time off
+      in <em>6 months</em>, working on finding someone who can fill in.
+    </p>
+    <div></div>
+    <span></span>
+    <details>
+      <summary>Recruitment Records</summary>
+      57 - Logos <br>
+      162 - Ines <br>
+      205 - W'isadel <br>
+    </details>
+    <hr />
+    <h2>Questions, comments, concerns, epiphanies, soliloquies</h2>
+    <section>
+      <ul>
+        <li>Are we required to go to training every Monday with Mrs. Dobberman? <br>
+          <i>Response: The answer is the same as every week you ask this question, yes you have to go to training and
+            no,
+            asking will not get you out of training.</i>
+        </li>
+        <li>We don't have enough honey biscuits in the break room <br>
+          <i>Response: Ceobe, we appreciate the notification, however we just refilled our rations yesterday, eating our
+            entire supply does not constitute us ordering more biscuits immediately.</i>
+        </li>
+        <li>Operator W is requesting a copy of these notes for reference.<br>
+          <i>Response: <strong>No.</strong></i>
+        </li>
+      </ul>
+    </section>
+    <figure id="Shift-Rotation">
+      <figcaption>Shift Rotations for Today:</figcaption>
+      <img src="/ShiftRotations.png" alt="14/37/1104" width="90%" />
+    </figure>
+
+    <figure id="Expedition-Archive">
+      <figcaption>Archive of Today's Expedition</figcaption>
+      <video controls width="90%">
+        <source src="/Expedition.mp4" type="video/mp4" />
+        <a href="/Expedition.mp4"></a>
+      </video>
+    </figure>
+    <figure>
+      <figcaption>Pure Audio of Expedition for Records</figcaption>
+      <audio controls src="/ExpeditionAudio.mp3"></audio>
+      <a href="/ExpeditionAudio.mp3">Download Audio</a>
+    </figure>
+  </main>
+
+  <form id="Elite-Form">
+    <h3>Operator Elite Promotion Request Form</h3>
+    <fieldset>
+      <label for="name">Operator Name:</label>
+
+      <input type="text" id="name" name="name" required minlength="1" maxlength="50" size="10" />
+    </fieldset>
+    <fieldset>
+
+
+      <legend>Resources Provided by:</legend>
+
+      <div>
+        <input type="checkbox" id="self" name="self" checked />
+        <label for="self">Self</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="OpBudget" name="OpBudget" />
+        <label for="OpBudget">RI Budget</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Module Type:</legend>
+
+      <div>
+        <input type="radio" id="N/A" name="module" value="N/A" checked />
+        <label for="N/A">N/A</label>
+      </div>
+
+      <div>
+        <input type="radio" id="Mod X" name="module" value="Mod X" />
+        <label for="Mod X">Mod X</label>
+      </div>
+
+      <div>
+        <input type="radio" id="mod-y" name="module" value="mod-y" />
+        <label for="mod-y">Mod Y</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <label for="authorized-users">User that Authorized Elite Promotion:</label>
+      <input list="authorization" id="authorized-users" name="authorized-users" />
+      <br>
+      <datalist id="authorization">
+        <option value="Amiya"></option>
+        <option value="Kal'tsit"></option>
+        <option value="Doctor"></option>
+        <option value="Closure"></option>
+        <option value="Warfarin"></option>
+        <option value="Other (Please enter authorized user)"></option>
+      </datalist>
+      <br>
+      <label for="elite-promotion">Elite Promotion Level:</label>
+
+      <select id="elite-promotion">
+        <option value="">--Please choose an option--</option>
+        <option value="e0">E0</option>
+        <option value="e1">E1</option>
+        <option value="e2">E2</option>
+      </select>
+      <br>
+      <label for="start">Authorization Date:</label>
+
+      <input type="date" id="start" name="trip-start" value="1104-01-18" min="1000-01-01" max="1200-12-31" />
+    </fieldset>
+    <fieldset>
+      <label for="story">Explanation:</label>
+      <textarea id="story" name="story" rows="5" cols="33">
+      </textarea>
+    </fieldset>
+    <button type="button">Submit Application</button>
+
+  </form>
+</body>
+<footer>
+  <p>© Rhodes Island Pharmaceuticals Inc.</p>
+</footer>
+
+</html>
