@@ -184,7 +184,6 @@ details {
 }
 
 .media-items {
-  flex: 1fr;
   overflow: hidden;
   padding: 0px;
 }
