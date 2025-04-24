@@ -65,3 +65,22 @@ General CSS Topics:
   - [x] The layout of your page should automatically reflow when the size changes, meaning, we shouldn't have to pinch and zoom in a lot to read text, click buttons, etc.
 - FontsLinks to an external site.       /* pick varying font styles to make your text fun to read */
   - [x] Include and use a 3rd party font (https://fonts.google.com/Links to an external site.). You can load the font in either your HTML or your CSS
+
+CSS Selectors
+- [x] Class Selector (.class)
+- [x] ID Selector (#id)
+- [x] Universal Selector (*)
+- [x] Element Selector (element) 
+- [x] Attribute Selector (e.g. [attribute=foo])     
+- [x] Pseudo-class Selector (e.g. p:hover)
+- [x] Selector List (element, element)                   /* select multiple elements */
+Combinators (you must use one of each)    /* specify selections based on element positioning in the DOM tree */
+  - [x] Descendant Combinator (element element)
+  - [x] Child Combinator (element > element)
+  - [x] General sibling combinator (element ~ element)
+  - [x] Adjacent sibling combinator (element + element)
+  - [x] Combining Two Selectors (element.class)
+- New Selectors /*Adopted in December 2023!*/
+- [x] :has()  /*You must use this selector. Click hereLinks to an external site. for how to use. This is a new selector that was widely adopted in 2023.*/
+- Nested Selectors
+- [x] Nested selectors are another type of selector that have recently been adopted in 2023. HereLinks to an external site. is some more information about this selector. Please also include at least one type of this selector in your CSS.
