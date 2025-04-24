@@ -1,0 +1,253 @@
+:root {
+  --dark-mode-bg: #2e2e2e;
+  --dark-mode-text: hsl(60, 2%, 90%);
+}
+
+@font-face {
+  font-family: "Nuber Next";
+
+  /*src: url("../docs/assets/nuber-font/NuberNextCondensed-DemiBold-BF63c8a09b8a92e.otf") format("opentype");*/
+  src: url("../docs/assets/nuber-font/NuberNextCondensed-Regular-BF63c8a09d46321.otf") format("opentype");
+  font-weight: 400;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nuber Next";
+  src: url("../docs/assets/nuber-font/NuberNextCondensed-RegularItalic-BF63c8a0fcb95eb.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nuber Next";
+  src: url("../docs/assets/nuber-font/NuberNextCondensed-Bold-BF63c8a0e81527a.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nuber Next";
+  src: url("../docs/assets/nuber-font/NuberNextCondensed-BoldItalic-BF63c8a0b1ebfc0.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+html,
+body {
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-text, white);
+  font-family: "Nuber Next", "Trebuchet MS", "Wingdings";
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+/*Navigation menu*/
+.menu {
+  position: sticky;
+  max-width: 300px;
+  max-height: 50vh;
+  border-style: solid;
+  border-color: #dee2e6;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #b0adad;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.menu-list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-list li {
+  text-align: justify;
+  margin: 5px 15px;
+  padding: 3px 0;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #b0adad;
+  display: block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.menu-list a:hover {
+  color: #383636;
+  background-color: #eaf2f8;
+}
+
+section {
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  width: 600px;
+  height: 75px;
+  padding: 20px;
+  color: black;
+  background-color: color-mix(in hsl, hsl(0 0 70), hsl(0, 54%, 40%));
+  border: 5px solid #6c3232;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+/*basic data for today's meeting*/
+#data {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  border: 3px solid #e3e3e3;
+  max-width: 600px;
+
+}
+
+#Attendance {
+  margin-bottom: 0px;
+}
+
+#Attendance-List li {
+  margin-top: 0px;
+  font-size: 0.9em;
+}
+
+#Agenda
+
+/* This is big section to capture the majority of the document*/
+  {
+  margin: 1px 1px 40px 1px;
+
+}
+
+#Roster {
+  padding: 15px;
+}
+
+#update {
+  display: inline;
+}
+
+hr {
+  margin: 40px 0px;
+}
+
+details {
+  margin: 1mm 1mm 1mm 30mm;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: color(srgb 0.3 0.3 0.3);
+  font-size: 20px;
+}
+
+#media {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  margin: 20px 10px;
+  padding: 10px 10px 10px 10px;
+  gap: 10px;
+  max-width: 95vw;
+}
+
+.media-items {
+  flex: 1fr;
+  overflow: hidden;
+  padding: 0px;
+}
+
+figure {
+  padding: 0px;
+  margin: 0px;
+}
+
+.media-file {
+  width: 40vw;
+  margin: auto;
+}
+
+
+@media (max-width: 1080px) {
+  #media {
+    flex-direction: column;
+  }
+
+  .media-file {
+    width: 90vw;
+  }
+}
+
+#Expedition-Audio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+
+#Elite-Form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding: 10px 10px;
+  background-color: white;
+  color: rgb(47, 47, 49);
+  width: 80%;
+  gap: 2px;
+}
+
+fieldset {
+  grid-column: 1/3;
+  margin: 2px;
+}
+
+#authorization-1col {
+  grid-column: span 1;
+  justify-self: center;
+  width: 35vw;
+}
+
+#storylabel,
+textarea {
+  display: block;
+
+}
+
+
+button {
+  grid-column: 1/3;
+  justify-self: center;
+  margin: 30px 20px 20px 20px;
+  width: 200pt;
+  height: 40px;
+}
+
+button:active {
+  background-color: #27acd4;
+}

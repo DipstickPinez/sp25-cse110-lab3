@@ -1,0 +1,67 @@
+# internal checklist for assignment 
+General CSS Topics: 
+
+- [x] Comment /* write down comments to make your css easier to read */
+- Color                                               /* apply colors to your HTML elements */
+  - [x] rgb(r, g, b) or rgba(r, g, b, a)     /* red, green, blue, alpha values */
+  - [x] #FFF or #FFFFFF                    /* hex codes */
+  - [x] hsl(h, s, l) or hsla(h, s, l, a)       /* hue, saturation, lightness, alpha values */
+  - [x] Color name (i.e ‘orange’)
+  - Wider-gamut color:
+    - [x] color(colorspace c1 c2 c3[ / A])     /* predefined color space, values for color space*/
+    - [x] color-mix(method, color1[ p1], color2[ p2])   /*method to mix colors, values & percentages of color*/
+- CSS Variables & Fallbacks
+  - [x] Show at least one example of using a CSS variable that also has a fallback. 
+- Background    Links to an external site./* apply background styles to your elements */
+  - [x] background-color
+
+- Unit.     /* units of measurement for sizing and spacing your elements */
+  - [x] Use 3 unique relative units total
+    - em, rem, vh/vw
+  - [x] Use 3 unique absolute units total
+    - px, pt, mm
+- Box Model    /* configure the containers that holds your HTML content */
+  - Margin     /* spacing between html elements */
+    - [x] Long (margin-top, margin-bottom, margin-left, margin-right)
+    - [x] Short (margin: <top> <right> <bottom> <left>)
+    - [x] Auto margins: margin: auto
+  - Padding     /* spacing within html elements */
+    - [ ] Long (padding-top, padding-bottom, padding-left, padding-right)
+    - [ ] Short (padding: <top> <right> <bottom> <left>)
+  - Borders     /* borders around html elements, hint: apply borders before testing out padding and margin to better understand the difference between the two */
+    - [x] border-style
+    - [x] border-color
+    - [x] border-radius
+    - [x] border-width
+- Text     /* style your text */
+  - [x] color
+  - [x] text-decoration
+  - [x] text-align
+- Display
+- [x] Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page.
+- Sizing     /* set the height and width for an element */
+  - [x] height
+  - [x] width
+  - [x] min-width    
+  - [x] max-width
+- Position.     /* element positioning on the page */
+  - [x] 2 of the following values: static, relative, fixed, absolute, sticky
+- Pseudo-class.     /* elements that exist in your document conditionally */
+  - [x] :hover
+  - [x] :active
+- Layouts
+  - Flexbox.   /* allow your elements to lay themselves out automatically */
+    - [x] apply flex to the display property
+    - [x] Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes
+      - justify-content, align-items, flex-direction
+  - Grid.        /* instantiate a grid for your layouts */
+    - [x] apply grid to the display property
+    - [x] Must have more than two children within the element that is using the grid. Must use a minimum of three of the grid related attributes
+      - grid-template-columns, grid-columns, justify self
+- Responsiveness       /* make your website friendly for multiple devices */
+  - [x] At least one query based on the screen width
+    - [x] Media QueryLinks to an external site.
+  - [x] Check the DevTools in your browser! Make sure your site works and looks fine on the three main types of form factors (Very small screen (phone), tablet or smaller laptop, and desktop).
+  - [x] The layout of your page should automatically reflow when the size changes, meaning, we shouldn't have to pinch and zoom in a lot to read text, click buttons, etc.
+- FontsLinks to an external site.       /* pick varying font styles to make your text fun to read */
+  - [x] Include and use a 3rd party font (https://fonts.google.com/Links to an external site.). You can load the font in either your HTML or your CSS
